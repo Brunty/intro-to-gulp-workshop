@@ -16,4 +16,8 @@
 | Ruby | 2.0.0-p481 |
 | Nginx | 1.8 |
 
-To get up and running with this box. Just clone this repo and run: `vagrant up`
+To get up and running with this box. Just clone this repo and run: `vagrant up` in the directory you cloned it into. This will create the VM the first time you run it, after that it'll boot the VM if it's not already booted. Once it's created you can SSH in with `vagrant ssh`.
+
+The code of your project will live in the `/var/www/` directory.
+
+To halt the VM, run `vagrant halt` from the host machine.
