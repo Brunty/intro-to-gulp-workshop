@@ -3,6 +3,8 @@
 
 ### Box Details
 
+| Note | Info |
+| --- | --- |
 | Deploy Target | Local (VirtualBox) |
 | OS | Ubuntu Trusty 14.04 LTS x64 |
 | IP | 192.168.55.105 |
