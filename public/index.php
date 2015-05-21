@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Intro to Gulp Workshop: @TheMattBrunt</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.min.css">
+    <title>Intro to Gulp Workshop: @TheMattBrunt</title>
+    <!-- <link rel="stylesheet" href="css/main.min.css"> -->
+    <link rel="icon" href="img/gulp.png">
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -14,7 +14,5 @@
 <![endif]-->
 
 <p>Let's make some magic...</p>
-
-<script src="js/main.min.js"></script>
 </body>
 </html>

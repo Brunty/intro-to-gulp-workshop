@@ -3,15 +3,15 @@ vagrantfile:
     vm:
         box: puphpet/ubuntu1404-x64
         box_url: puphpet/ubuntu1404-x64
-        hostname: local.gulpshop
+        hostname: local.puphpet-gulp
         memory: '512'
         cpus: '1'
         chosen_provider: virtualbox
         network:
-            private_network: 192.168.55.105
+            private_network: 192.168.55.150
             forwarded_port:
-                vflnp_mjuqryu9m7ju:
-                    host: '8030'
+                vflnp_23bgcno3ts28:
+                    host: '6936'
                     guest: '22'
         post_up_message: ''
         provider:
@@ -32,7 +32,7 @@ vagrantfile:
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
-            vflsf_ct0pe0vtjgzo:
+            vflsf_qtd88jd2k7g1:
                 source: ./
                 target: /var/www
                 sync_type: default
@@ -86,10 +86,10 @@ nginx:
         proxy_buffers: '4 256k'
     upstreams: {  }
     vhosts:
-        nxv_w697johd84vz:
-            server_name: gulp.dev
+        nxv_uo5fy5nxoyw6:
+            server_name: workshop.gulp
             server_aliases:
-                - www.gulp.dev
+                - www.workshop.gulp
             www_root: /var/www/public
             listen_port: '80'
             index_files:
@@ -106,7 +106,7 @@ nginx:
             rewrite_to_https: '1'
             spdy: '1'
             locations:
-                nxvl_xxhnmu3mxf63:
+                nxvl_h6yl9qqm2d1w:
                     location: /
                     autoindex: off
                     try_files:
@@ -116,7 +116,7 @@ nginx:
                     fastcgi: ''
                     fastcgi_index: ''
                     fastcgi_split_path: ''
-                nxvl_858vrp1a6xvv:
+                nxvl_0ealhsh69ff8:
                     location: '~ \.php$'
                     autoindex: off
                     try_files:
@@ -143,7 +143,7 @@ apache:
         - proxy_fcgi
         - rewrite
     vhosts:
-        av_6ep07u85nc2j:
+        av_k0yll7ulitje:
             servername: awesome.dev
             serveraliases:
                 - www.awesome.dev
@@ -160,7 +160,7 @@ apache:
             ssl_protocol: ''
             ssl_cipher: ''
             directories:
-                avd_s76iohy83ivl:
+                avd_pgq34tdr9u3z:
                     path: /var/www/awesome
                     options:
                         - Indexes
@@ -172,7 +172,7 @@ apache:
                         - 'all granted'
                     custom_fragment: ''
                     files_match:
-                        avdfm_bxe996wazwv0:
+                        avdfm_t5p5s4kz5xbd:
                             path: \.php$
                             sethandler: 'proxy:fcgi://127.0.0.1:9000'
                             custom_fragment: ''
@@ -198,7 +198,7 @@ php:
     fpm_ini:
         error_log: /var/log/php-fpm.log
     fpm_pools:
-        phpfp_86okde43z230:
+        phpfp_4bbyladxe708:
             ini:
                 prefix: www
                 listen: '127.0.0.1:9000'
@@ -241,22 +241,17 @@ drush:
 ruby:
     install: '1'
     versions:
-        rv_ppgrhuxrdqeu:
+        rv_06fh309798gr:
             default: '1'
             bundler: '1'
             version: 2.0.0-p481
-            gems:
-                - sass@3.4
 python:
     install: '1'
     packages: {  }
     versions: {  }
 nodejs:
     install: '1'
-    npm_packages:
-        - gulp
-        - bower
-        - browser-sync
+    npm_packages: {  }
 hhvm:
     install: '0'
     nightly: 0
@@ -280,15 +275,15 @@ mysql:
         override_options: {  }
     adminer: 0
     users:
-        mysqlnu_r99kc2c3nztq:
+        mysqlnu_c1f1y2913746:
             name: dbuser
             password: '123'
     databases:
-        mysqlnd_47j7bha0zm00:
+        mysqlnd_731si4obrwp7:
             name: dbname
             sql: ''
     grants:
-        mysqlng_jd2z3s5xm1dc:
+        mysqlng_l1yhet2bl7j1:
             user: dbuser
             table: '*.*'
             privileges:

@@ -21,7 +21,7 @@ The code of your project will live in the `/var/www/` directory.
 
 To halt the VM, run `vagrant halt` from the host machine.
 
-Once the vagrant box is created, you'll want to add the following line to your [hosts file](http://en.wikipedia.org/wiki/Hosts_%28file%29) `192.168.55.105 gulp.dev www.gulp.dev` (wherever it may reside on your host machine)
+Once the vagrant box is created, you'll want to add the following line to your [hosts file](http://en.wikipedia.org/wiki/Hosts_%28file%29) `192.168.55.150 workshop.gulp www.workshop.gulp` (wherever it may reside on your host machine)
 
 
 
@@ -31,12 +31,12 @@ Once the vagrant box is created, you'll want to add the following line to your [
 | :--- | :--- |
 | Deploy Target | Local (VirtualBox) |
 | OS | Ubuntu Trusty 14.04 LTS x64 |
-| IP | 192.168.55.105 |
-| Hostname | local.gulpworkshop |
+| IP | 192.168.55.150 |
+| Hostname | local.puphpet-gulp |
 | CPUs | 1 |
 | RAM | 512MB |
 | Folder Target | /var/www |
-| Virtual Host | gulp.dev (www.gulp.dev) |
+| Virtual Host | workshop.gulp (www.workshop.gulp) |
 | Doc Root | /var/www/public |
 | PHP | 5.6 |
 | Ruby | 2.0.0-p481 |
