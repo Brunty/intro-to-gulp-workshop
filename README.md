@@ -1,5 +1,6 @@
 # Intro to Gulp: Workshop
 
+Hi, I'm Matt. Let's make some stuff and learn some things.
 
 ## Notes about the workshop
 
