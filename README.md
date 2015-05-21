@@ -23,6 +23,7 @@ To halt the VM, run `vagrant halt` from the host machine.
 
 Once the vagrant box is created, you'll want to add the following line to your [hosts file](http://en.wikipedia.org/wiki/Hosts_%28file%29) `192.168.55.150 workshop.gulp www.workshop.gulp` (wherever it may reside on your host machine)
 
+The Vagrant box doesn't have all the various modules / gems installed that we'll be using, this is because we'll go through the process of installing them as a learning exercise. If you were packaging your own box for a project, ideally you'd add them all so it was fully setup from the start. 
 
 
 ### Box Details
