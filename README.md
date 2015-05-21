@@ -40,7 +40,10 @@ Once the vagrant box is created, you'll want to add the following line to your [
 | Doc Root | /var/www/public |
 | PHP | 5.6 |
 | Ruby | 2.0.0-p481 |
+| node | 0.12.3 |
+| npm | 2.9.1 |
 | Nginx | 1.8 |
+
 
 ### Reference table for various useful commands
 | Description | Command to run |
