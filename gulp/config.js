@@ -13,6 +13,7 @@ module.exports = {
     },
     sassConfig: {
         style: 'compressed',
-        sourcemap: usesourcemaps
+        sourcemap: usesourcemaps,
+        verbose: true
     }
 };

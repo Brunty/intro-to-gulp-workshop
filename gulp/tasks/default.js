@@ -1,2 +1,2 @@
 var gulp = require('gulp');
-gulp.task('default', ['sass:compile']);
+gulp.task('default', ['browser-sync:init', 'sass:compile', 'sass:watch']);
