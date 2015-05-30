@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Intro to Gulp Workshop: @TheMattBrunt</title>
-    <!-- <link rel="stylesheet" href="css/main.min.css"> -->
+    <link rel="stylesheet" href="css/main.min.css">
     <link rel="icon" href="img/gulp.png">
 </head>
 <body>
